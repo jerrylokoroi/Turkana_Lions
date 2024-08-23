@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Turkana Lions</title>
+    <meta name="description"
+        content="Get in touch with us for any inquiries or support. Find our contact information, submit a contact form, and view our location on the map.">
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-form-section,
+        .contact-info,
+        .map {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background: #fff;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+        }
+
+        .contact-form-section h1,
+        .contact-info h2,
+        .map h2 {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .contact-form label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .contact-form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .contact-form button:hover {
+            background: #555;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
+            /* 16:9 aspect ratio */
+        }
+
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        footer .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        footer .social-media img {
+            height: 25px;
+            width: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/images/logo.webp" alt="Institution Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="departments.html">Departments</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form-section">
+        <h1>Contact Us</h1>
+        <form action="submit_form.php" method="post" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 1234 Lodwar, Turkana, Kenya</p>
+        <p><strong>Phone:</strong> +254 456 7890</p>
+        <p><strong>Email:</strong> <a href="mailto:info@institution.com">info@turkanalions.org</a></p>
+    </section>
+
+    <section class="map">
+        <h2>Our Location</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086055540646!2d-122.41941548469413!3d37.774929179758636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a64a53fdf%3A0x5d7f2e9c83f2c95b!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2ske!4v1607887741412!5m2!1sen!2ske"
+                width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Turkana Lions. All rights reserved.</p>
+            <p>Contact us: <a href="mailto:info@institution.com">info@turkanalions.com</a></p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank"><img src="/images/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com" target="_blank"><img src="/images/x.jpeg" alt="Twitter"></a>
+                <a href="https://instagram.com" target="_blank"><img src="/images/instagram.jpeg" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+
+</body>
+
+</html>
